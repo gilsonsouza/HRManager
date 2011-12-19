@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HR Manager</string>
+    <string name="entrar">Entrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="user">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="comprovante">Comprovante</string>
+    <string name="manager">Superior Imediato:</string>
+    <string name="department">Setor:</string>
+    <string name="attach">Comprovante</string>
+    <string name="absent">Justificar Ausência</string>
+    <string name="vacation">Solicitar Férias</string>
+    <string name="opSick">Doença</string>
+    <string name="opTransport">Transporte</string>
+    <string name="opOther">Outro</string>
+    <string name="justification">Justificativa:</string>
+    <string name="back">Voltar</string>
+    <string name="activityJustification">Justificação de Ausência</string>
+    <string name="date">Data:</string>
+    <string name="reason">Motivo:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="activityVacation">Solicitação de Férias</string>  
+    <string name="exitMsg">Deseja sair?</string>
+      
+        
+</resources>

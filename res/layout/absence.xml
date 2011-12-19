@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#0a2673"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activityJustification"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+    
+        <LinearLayout 
+            android:layout_weight="1" 
+			android:orientation="horizontal" 
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:padding="5dip">
+			
+	        <LinearLayout 
+	            android:layout_weight="1" 
+				android:orientation="vertical" 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent">
+				
+	            <RadioGroup 
+	                android:id="@+id/rGroup"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" 
+	                android:orientation="vertical"
+	                android:gravity="center_vertical" >
+	                
+	                <TextView 
+	                    android:layout_width="fill_parent" 
+	                    android:layout_height="wrap_content" 
+	                    android:text="@string/reason" 
+	                    android:textSize="20dip" 
+	                    android:textStyle="bold"
+	                    android:textColor="#000000"
+	                    />
+	 
+	                <RadioButton 
+	                    	android:checked="false"
+	                        android:text="@string/opTransport"
+	                        android:id="@+id/rbTrasnport"
+	                        android:textColor="#000000"/>
+	 
+	                <RadioButton 
+	                    	android:checked="false"
+	                        android:text="@string/opSick"
+	                        android:id="@+id/rbSick"
+	                        android:textColor="#000000"/>
+	 
+	                <RadioButton 
+	                    	android:checked="false"
+	                        android:text="@string/opOther"
+	                        android:id="@+id/rbOther"
+	                        android:textColor="#000000"/>
+	 
+      			</RadioGroup>
+			</LinearLayout>
+	            
+			<LinearLayout 
+			    android:layout_weight="1" 
+				android:orientation="vertical" 
+				android:layout_height="fill_parent"
+				android:gravity="top" 
+				android:layout_width="fill_parent" 
+				android:paddingTop="10dp">
+	            
+			    <TextView
+			    	android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:text="@string/date"
+	                android:textSize="20dip"
+	                android:textStyle="bold" 
+	                android:textColor="#000000"/>
+	            
+			     <EditText 
+			         android:id="@+id/inputDate"
+			         android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content"
+	                 android:layout_gravity="center"
+	                 android:editable="false"
+	                 android:inputType="datetime"
+	                 android:cursorVisible="false"/>
+			    
+			</LinearLayout>  
+			          
+		</LinearLayout>
+		
+        <LinearLayout 
+            android:layout_weight="1" 
+			android:orientation="vertical" 
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:padding="10dip">
+			
+        	<TextView
+			    android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:text="@string/justification"
+	            android:textSize="20dip"
+	            android:textStyle="bold" 
+	            android:textColor="#000000"/>
+			
+            <EditText 
+                android:id="@+id/inputJustification"
+                android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="false"
+	            android:lines="8"
+	            android:maxLines="6"
+	            android:gravity="top|left" 
+	            android:inputType="textMultiLine"
+	            android:hint="Insira a justificativa... "/>
+            
+		</LinearLayout>
+    
+        <LinearLayout
+					android:orientation="horizontal" 
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_weight="0"
+					android:padding="5dip">
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="0.5"
+				    android:orientation="vertical" >
+
+					<Button
+					    android:id="@+id/btBack"
+					    android:layout_width="110dp"
+					    android:layout_height="fill_parent"
+					    android:layout_weight="0.5"
+					    android:text="@string/cancel" />
+
+				</LinearLayout>
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="0.5"
+				    android:orientation="vertical" >
+
+					<Button
+					    android:id="@+id/btAttach"
+					    android:layout_width="110dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="0.5"
+					    android:text="@string/attach" />
+
+				</LinearLayout>
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="0.5"
+				    android:orientation="vertical" >
+
+					<Button
+					    android:id="@+id/btConfirm"
+					    android:layout_width="110dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="0.5"
+					    android:text="@string/confirm" />
+
+				</LinearLayout>
+				
+		</LinearLayout>
+
+</LinearLayout>

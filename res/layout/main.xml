@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+	--Frame 1
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="87dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+			
+			<LinearLayout android:layout_weight="1" 
+				android:orientation="vertical" 
+				android:padding="3dp"
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent">
+				
+					<LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="match_parent"
+					    android:background="#ffffff"
+					    android:orientation="vertical"
+					    android:paddingLeft="1dp">
+
+						<ImageView
+						    android:id="@+id/imageView1"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:src="@drawable/saplogo" 
+						    android:paddingTop="2dp"/>
+							
+					</LinearLayout>	
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_weight="1"  
+			    
+				android:orientation="vertical" 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent" 
+				
+				android:paddingTop="7dp"
+				android:paddingBottom="3dp"
+				android:paddingLeft="3dp"
+				android:paddingRight="3dp">
+					
+					<LinearLayout
+						android:id="@+id/messages"
+						android:clickable="true"
+					 	android:layout_weight="1"
+					    android:background="#0a2673" 
+						android:orientation="horizontal" 
+						android:layout_height="fill_parent" 
+						android:layout_width="fill_parent">
+							
+					    <TextView
+					        android:id="@+id/newsCount"
+					        android:gravity="center"
+					        android:layout_gravity="center_vertical"
+		        		    android:textColor="#ffffff"
+		        		    android:textSize="16dip"
+		        		    android:layout_height="wrap_content" 
+							android:layout_width="wrap_content"
+							android:text="Você tem X mensagens." >
+		        		</TextView>
+					</LinearLayout>	
+			</LinearLayout>	
+	</LinearLayout>	
+	
+    --Frame 2
+    <LinearLayout android:layout_weight="1"  
+			android:orientation="vertical" 
+			android:padding="3dip"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:background="#ffffff">
+			
+	        <LinearLayout  
+	            android:background="#ffffff" 
+				android:orientation="vertical" 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent" android:paddingBottom="30dp" android:paddingTop="30dp">
+
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Notícias"
+	                android:textColor="#000000"
+	                android:textSize="16dip" />
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="100dp"
+	                android:background="@layout/border"
+	                android:orientation="horizontal" android:padding="10dp">
+
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1"
+	                    android:orientation="horizontal"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="match_parent"
+	                        android:src="@drawable/imgapp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="0.6"
+	                    android:orientation="horizontal"
+	                    android:padding="10dip" >
+
+	                    <TextView
+	                        android:id="@+id/newsTitleTop"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_vertical"
+	                        android:text="Título da primeira notícia."
+	                        android:textColor="#000000"
+	                        android:textSize="16dip" />
+	                </LinearLayout>
+	            </LinearLayout>
+			
+				<LinearLayout 
+					android:orientation="horizontal" 
+					android:layout_height="100dp"
+					android:background="@layout/border"
+					android:layout_width="fill_parent" android:padding="10dp">
+					
+				    <LinearLayout 
+				        android:layout_weight="1"
+						android:orientation="horizontal" 
+						android:padding="10dp"
+						android:layout_height="fill_parent" 
+						android:layout_width="fill_parent">
+
+				        <ImageView
+				            android:layout_width="fill_parent"
+				            android:layout_height="match_parent"
+				            android:src="@drawable/imgapp" />
+						
+					</LinearLayout>	
+					
+				    <LinearLayout 
+				        android:layout_weight="0.6"
+						android:orientation="horizontal" 
+						android:padding="10dip"
+						android:layout_height="fill_parent" 
+						android:layout_width="fill_parent">
+				        
+				        <TextView
+				            android:id="@+id/newsTitleBottom"
+				            android:layout_gravity="center_vertical"
+		        		    android:textColor="#000000"
+		        		    android:textSize="16dip"
+		        		    android:layout_height="wrap_content" 
+							android:layout_width="fill_parent"
+							android:text="Título da segunda notícia." >
+		        		</TextView>   
+					</LinearLayout>	
+				    
+				</LinearLayout>	
+        </LinearLayout>
+	</LinearLayout>	
+	
+    --Frame 3    
+    <LinearLayout android:layout_weight="0.1"  
+			android:orientation="vertical" 
+			android:paddingTop="3dip"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:background="#ffffff">
+					
+			<Button android:layout_height="fill_parent" 
+			    android:id="@+id/btAbsent"
+			    android:text="@string/absent"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"></Button>
+			
+			<Button android:layout_height="fill_parent" 
+			    android:id="@+id/btVacation"
+			    android:text="@string/vacation"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"></Button>
+			
+	</LinearLayout>	
+</LinearLayout>
